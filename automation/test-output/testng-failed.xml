@@ -7,7 +7,6 @@
         <methods>
           <include name="verifyEmployeeNames"/>
           <include name="verifyNumberOfEmployees"/>
-          <include name="close"/>
           <include name="verifyProperDepartmentName"/>
           <include name="verifyEmployeeDepartments"/>
           <include name="verifyEmployeeDescriptions"/>

@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20879" started-at="2018-05-02T13:32:26Z" finished-at="2018-05-02T13:32:47Z">
+  <suite name="Default suite" duration-ms="25816" started-at="2018-05-02T14:17:45Z" finished-at="2018-05-02T14:18:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20879" started-at="2018-05-02T13:32:26Z" finished-at="2018-05-02T13:32:47Z">
+    <test name="Default test" duration-ms="25816" started-at="2018-05-02T14:17:45Z" finished-at="2018-05-02T14:18:11Z">
       <class name="com.branch.regression.BranchTeamRegression">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.branch.regression.BranchTeamRegression@2beee7ff]" name="init" is-config="true" duration-ms="20746" started-at="2018-05-02T06:32:26Z" finished-at="2018-05-02T06:32:47Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.branch.regression.BranchTeamRegression@6497b078]" name="init" is-config="true" duration-ms="25641" started-at="2018-05-02T07:17:45Z" finished-at="2018-05-02T07:18:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifyNumberOfEmployees()[pri:0, instance:com.branch.regression.BranchTeamRegression@2beee7ff]" name="verifyNumberOfEmployees" duration-ms="5" started-at="2018-05-02T06:32:47Z" description="Verify that number of employees match between All tab and sum of other tabs." finished-at="2018-05-02T06:32:47Z">
+        <test-method status="PASS" signature="verifyNumberOfEmployees()[pri:0, instance:com.branch.regression.BranchTeamRegression@6497b078]" name="verifyNumberOfEmployees" duration-ms="7" started-at="2018-05-02T07:18:11Z" description="Verify that number of employees match between All tab and sum of other tabs." finished-at="2018-05-02T07:18:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNumberOfEmployees -->
-        <test-method status="PASS" signature="verifyEmployeeNames()[pri:0, instance:com.branch.regression.BranchTeamRegression@2beee7ff]" name="verifyEmployeeNames" duration-ms="1" started-at="2018-05-02T06:32:47Z" description="Verify that employee names match between All tab and other tabs." finished-at="2018-05-02T06:32:47Z">
+        <test-method status="PASS" signature="verifyEmployeeNames()[pri:0, instance:com.branch.regression.BranchTeamRegression@6497b078]" name="verifyEmployeeNames" duration-ms="1" started-at="2018-05-02T07:18:11Z" description="Verify that employee names match between All tab and other tabs." finished-at="2018-05-02T07:18:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeNames -->
-        <test-method status="PASS" signature="verifyEmployeeDepartments()[pri:0, instance:com.branch.regression.BranchTeamRegression@2beee7ff]" name="verifyEmployeeDepartments" duration-ms="1" started-at="2018-05-02T06:32:47Z" description="Verify that employee departments are listed correctly between All tab and Department tabs." finished-at="2018-05-02T06:32:47Z">
+        <test-method status="PASS" signature="verifyEmployeeDepartments()[pri:0, instance:com.branch.regression.BranchTeamRegression@6497b078]" name="verifyEmployeeDepartments" duration-ms="1" started-at="2018-05-02T07:18:11Z" description="Verify that employee departments are listed correctly between All tab and Department tabs." finished-at="2018-05-02T07:18:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeDepartments -->
-        <test-method status="PASS" signature="verifyEmployeePhotos()[pri:0, instance:com.branch.regression.BranchTeamRegression@2beee7ff]" name="verifyEmployeePhotos" duration-ms="0" started-at="2018-05-02T06:32:47Z" description="Verify that employee photos are listed correctly between All tab and Department tabs." finished-at="2018-05-02T06:32:47Z">
+        <test-method status="PASS" signature="verifyEmployeePhotos()[pri:0, instance:com.branch.regression.BranchTeamRegression@6497b078]" name="verifyEmployeePhotos" duration-ms="1" started-at="2018-05-02T07:18:11Z" description="Verify that employee photos are listed correctly between All tab and Department tabs." finished-at="2018-05-02T07:18:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeePhotos -->
-        <test-method status="PASS" signature="verifyEmployeeDescriptions()[pri:0, instance:com.branch.regression.BranchTeamRegression@2beee7ff]" name="verifyEmployeeDescriptions" duration-ms="1" started-at="2018-05-02T06:32:47Z" description="Verify that employee descriptions are listed correctly between All tab and Department tabs." finished-at="2018-05-02T06:32:47Z">
+        <test-method status="PASS" signature="verifyEmployeeDescriptions()[pri:0, instance:com.branch.regression.BranchTeamRegression@6497b078]" name="verifyEmployeeDescriptions" duration-ms="2" started-at="2018-05-02T07:18:11Z" description="Verify that employee descriptions are listed correctly between All tab and Department tabs." finished-at="2018-05-02T07:18:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeDescriptions -->
-        <test-method status="PASS" signature="verifyProperDepartmentName()[pri:0, instance:com.branch.regression.BranchTeamRegression@2beee7ff]" name="verifyProperDepartmentName" duration-ms="1" started-at="2018-05-02T06:32:47Z" description="Verify that the proper department name is listed under each tab" finished-at="2018-05-02T06:32:47Z">
+        <test-method status="PASS" signature="verifyProperDepartmentName()[pri:0, instance:com.branch.regression.BranchTeamRegression@6497b078]" name="verifyProperDepartmentName" duration-ms="1" started-at="2018-05-02T07:18:11Z" description="Verify that the proper department name is listed under each tab" finished-at="2018-05-02T07:18:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProperDepartmentName -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.branch.regression.BranchTeamRegression@2beee7ff]" name="close" is-config="true" duration-ms="109" started-at="2018-05-02T06:32:47Z" finished-at="2018-05-02T06:32:47Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.branch.regression.BranchTeamRegression@6497b078]" name="close" is-config="true" duration-ms="145" started-at="2018-05-02T07:18:11Z" finished-at="2018-05-02T07:18:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

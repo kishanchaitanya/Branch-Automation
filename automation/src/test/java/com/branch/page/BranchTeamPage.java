@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -23,6 +24,7 @@ public class BranchTeamPage extends Base{
 	public By googleSearchBox = By.id("lst-ib");
 	public By branchWebSite = By.linkText("Branch.io");
 	public By bottomFootNotes = By.className("footer-inner");
+	public By breadcrumb = By.className("team-categories");
 	public By teamLink = By.linkText("Team");
 	
 	List<WebElement> allMembers = null;
@@ -84,6 +86,9 @@ public class BranchTeamPage extends Base{
 	}
 	
 	public void navigateAllTabs(){
+		
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,550)", "");
 		
 		// ALL TAB
 		driver.findElement(By.linkText("ALL")).click();		
