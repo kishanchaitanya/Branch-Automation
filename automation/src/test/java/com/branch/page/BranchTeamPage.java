@@ -55,6 +55,15 @@ public class BranchTeamPage extends Base{
 	
 	int departmentcount = 0;
 	
+	int allMembersSize = 0;
+	int dataMembersSize = 0;
+	int engineeringMembersSize = 0;
+	int marketingMembersSize = 0;
+	int operationsMembersSize = 0;
+	int partnerGrowthMembersSize = 0;
+	int productMembersSize = 0;
+	int recruitingMembersSize = 0;
+	
 	public WebElement getGoogleSearchBox(){
 		return driver.findElement(googleSearchBox);
 	}
@@ -79,6 +88,11 @@ public class BranchTeamPage extends Base{
 		// ALL TAB
 		driver.findElement(By.linkText("ALL")).click();		
 		allMembers = driver.findElements(By.className("category-all"));
+		for (WebElement member : allMembers) {
+			if(member.getAttribute("style").equals("display: inline-block;")){
+				allMembersSize = allMembersSize + 1;	
+			}
+		}
 		List<WebElement> allEmployees = driver.findElements(By.cssSelector(".category-all .info-block h2"));
 		for (WebElement element : allEmployees) {
 			allTabEmployeeNames.add(element.getText());
@@ -111,6 +125,11 @@ public class BranchTeamPage extends Base{
 		// DATA TAB
 		driver.findElement(By.linkText("DATA")).click();
 		dataMembers = driver.findElements(By.className("category-data"));
+		for (WebElement member : dataMembers) {
+			if(member.getAttribute("style").equals("display: inline-block;")){
+				dataMembersSize = dataMembersSize + 1;	
+			}
+		}
 		List<WebElement> dataEmployees = driver.findElements(By.cssSelector(".category-data .info-block h2"));
 		for (WebElement element : dataEmployees) {
 			allDepartmentTabEmployeeNames.add(element.getText());
@@ -137,6 +156,11 @@ public class BranchTeamPage extends Base{
 		// ENGINEERING TAB
 		driver.findElement(By.linkText("ENGINEERING")).click();
 		engineeringMembers = driver.findElements(By.className("category-engineering"));
+		for (WebElement member : engineeringMembers) {
+			if(member.getAttribute("style").equals("display: inline-block;")){
+				engineeringMembersSize = engineeringMembersSize + 1;	
+			}
+		}
 		List<WebElement> engineeringEmployees = driver.findElements(By.cssSelector(".category-engineering .info-block h2"));
 		for (WebElement element : engineeringEmployees) {
 			allDepartmentTabEmployeeNames.add(element.getText());
@@ -163,6 +187,11 @@ public class BranchTeamPage extends Base{
 		// MARKETING TAB
 		driver.findElement(By.linkText("MARKETING")).click();
 		marketingMembers = driver.findElements(By.className("category-marketing"));
+		for (WebElement member : marketingMembers) {
+			if(member.getAttribute("style").equals("display: inline-block;")){
+				marketingMembersSize = marketingMembersSize + 1;	
+			}
+		}
 		List<WebElement> marketingEmployees = driver.findElements(By.cssSelector(".category-marketing .info-block h2"));
 		for (WebElement element : marketingEmployees) {
 			allDepartmentTabEmployeeNames.add(element.getText());
@@ -189,6 +218,11 @@ public class BranchTeamPage extends Base{
 		// OPERATIONS TAB
 		driver.findElement(By.linkText("OPERATIONS")).click();
 		operationsMembers = driver.findElements(By.className("category-operations"));
+		for (WebElement member : operationsMembers) {
+			if(member.getAttribute("style").equals("display: inline-block;")){
+				operationsMembersSize = operationsMembersSize + 1;	
+			}
+		}
 		List<WebElement> operationsEmployees = driver.findElements(By.cssSelector(".category-operations .info-block h2"));
 		for (WebElement element : operationsEmployees) {
 			allDepartmentTabEmployeeNames.add(element.getText());
@@ -215,6 +249,11 @@ public class BranchTeamPage extends Base{
 		// PARTNER GROWTH TAB
 		driver.findElement(By.linkText("PARTNER GROWTH")).click();
 		partnerGrowthMembers = driver.findElements(By.className("category-partner-growth"));
+		for (WebElement member : partnerGrowthMembers) {
+			if(member.getAttribute("style").equals("display: inline-block;")){
+				partnerGrowthMembersSize = partnerGrowthMembersSize + 1;	
+			}
+		}
 		List<WebElement> partnerGrowthEmployees = driver.findElements(By.cssSelector(".category-partner-growth .info-block h2"));
 		for (WebElement element : partnerGrowthEmployees) {
 			allDepartmentTabEmployeeNames.add(element.getText());
@@ -241,6 +280,11 @@ public class BranchTeamPage extends Base{
 		// PRODUCT TAB
 		driver.findElement(By.linkText("PRODUCT")).click();
 		productMembers = driver.findElements(By.className("category-product"));
+		for (WebElement member : productMembers) {
+			if(member.getAttribute("style").equals("display: inline-block;")){
+				productMembersSize = productMembersSize + 1;	
+			}
+		}
 		List<WebElement> productEmployees = driver.findElements(By.cssSelector(".category-product .info-block h2"));
 		for (WebElement element : productEmployees) {
 			allDepartmentTabEmployeeNames.add(element.getText());
@@ -267,6 +311,11 @@ public class BranchTeamPage extends Base{
 		// RECRUITING TAB
 		driver.findElement(By.linkText("RECRUITING")).click();
 		recruitingMembers = driver.findElements(By.className("category-recruiting"));
+		for (WebElement member : recruitingMembers) {
+			if(member.getAttribute("style").equals("display: inline-block;")){
+				recruitingMembersSize = recruitingMembersSize + 1;	
+			}
+		}
 		List<WebElement> recruitingEmployees = driver.findElements(By.cssSelector(".category-recruiting .info-block h2"));
 		for (WebElement element : recruitingEmployees) {
 			allDepartmentTabEmployeeNames.add(element.getText());
@@ -302,11 +351,10 @@ public class BranchTeamPage extends Base{
 	
 	public void validateNumberOfTeamMembers(){
 		
-		int numberOfAllTeamMembers = allMembers.size();		
-		int numberOfDepartmentMembers = dataMembers.size() + engineeringMembers.size() +
-										marketingMembers.size() + operationsMembers.size() + 
-										partnerGrowthMembers.size() + productMembers.size() +
-										recruitingMembers.size();
+		int numberOfAllTeamMembers = allMembersSize;		
+		int numberOfDepartmentMembers = dataMembersSize + engineeringMembersSize + marketingMembersSize +
+										operationsMembersSize + partnerGrowthMembersSize + productMembersSize +
+										recruitingMembersSize;
 		
 		assertTrue(numberOfAllTeamMembers == 129);
 		assertTrue(numberOfDepartmentMembers == 125);

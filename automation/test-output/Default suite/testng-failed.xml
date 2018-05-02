@@ -5,8 +5,13 @@
     <classes>
       <class name="com.branch.regression.BranchTeamRegression">
         <methods>
+          <include name="verifyEmployeeNames"/>
+          <include name="verifyNumberOfEmployees"/>
           <include name="close"/>
+          <include name="verifyProperDepartmentName"/>
+          <include name="verifyEmployeeDepartments"/>
           <include name="verifyEmployeeDescriptions"/>
+          <include name="verifyEmployeePhotos"/>
           <include name="init"/>
         </methods>
       </class> <!-- com.branch.regression.BranchTeamRegression -->
