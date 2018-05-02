@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21318" started-at="2018-05-02T12:14:42Z" finished-at="2018-05-02T12:15:03Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21318" started-at="2018-05-02T12:14:42Z" finished-at="2018-05-02T12:15:03Z">
+      <class name="com.branch.regression.BranchTeamRegression">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.branch.regression.BranchTeamRegression@78ffe6dc]" name="init" is-config="true" duration-ms="21177" started-at="2018-05-02T05:14:42Z" finished-at="2018-05-02T05:15:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="verifyNumberOfEmployees()[pri:0, instance:com.branch.regression.BranchTeamRegression@78ffe6dc]" name="verifyNumberOfEmployees" duration-ms="8" started-at="2018-05-02T05:15:03Z" description="Verify that number of employees match between All tab and sum of other tabs." finished-at="2018-05-02T05:15:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfEmployees -->
+        <test-method status="PASS" signature="verifyEmployeeNames()[pri:0, instance:com.branch.regression.BranchTeamRegression@78ffe6dc]" name="verifyEmployeeNames" duration-ms="1" started-at="2018-05-02T05:15:03Z" description="Verify that employee names match between All tab and other tabs." finished-at="2018-05-02T05:15:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmployeeNames -->
+        <test-method status="PASS" signature="verifyEmployeeDepartments()[pri:0, instance:com.branch.regression.BranchTeamRegression@78ffe6dc]" name="verifyEmployeeDepartments" duration-ms="1" started-at="2018-05-02T05:15:03Z" description="Verify that employee departments are listed correctly between All tab and Department tabs." finished-at="2018-05-02T05:15:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmployeeDepartments -->
+        <test-method status="PASS" signature="verifyEmployeePhotos()[pri:0, instance:com.branch.regression.BranchTeamRegression@78ffe6dc]" name="verifyEmployeePhotos" duration-ms="1" started-at="2018-05-02T05:15:03Z" description="Verify that employee photos are listed correctly between All tab and Department tabs." finished-at="2018-05-02T05:15:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmployeePhotos -->
+        <test-method status="PASS" signature="verifyEmployeeDescriptions()[pri:0, instance:com.branch.regression.BranchTeamRegression@78ffe6dc]" name="verifyEmployeeDescriptions" duration-ms="1" started-at="2018-05-02T05:15:03Z" description="Verify that employee descriptions are listed correctly between All tab and Department tabs." finished-at="2018-05-02T05:15:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmployeeDescriptions -->
+        <test-method status="PASS" signature="verifyProperDepartmentName()[pri:0, instance:com.branch.regression.BranchTeamRegression@78ffe6dc]" name="verifyProperDepartmentName" duration-ms="1" started-at="2018-05-02T05:15:03Z" description="Verify that the proper department name is listed under each tab" finished-at="2018-05-02T05:15:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProperDepartmentName -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.branch.regression.BranchTeamRegression@78ffe6dc]" name="close" is-config="true" duration-ms="112" started-at="2018-05-02T05:15:03Z" finished-at="2018-05-02T05:15:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.branch.regression.BranchTeamRegression -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
